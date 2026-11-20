@@ -95,7 +95,3 @@ A few non-obvious details worth knowing if you're extending this code:
 - The classifier collapses several distinct abnormal beat types (`L`, `R`, `A`, `V`, `F`, `/`) into a single binary "Abnormal" label. These types have quite different physiological signatures (e.g. atrial premature beats have a *narrow* QRS, unlike ventricular beats), so a single binary classifier with these features performs noticeably better on some abnormal types than others.
 - Only channel 0 of each record is used; multi-channel fusion is not implemented.
 - The decision tree is a simple baseline; a random forest or gradient-boosted model would likely improve recall on the harder abnormal beat types.
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
